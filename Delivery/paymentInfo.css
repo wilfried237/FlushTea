@@ -1,0 +1,84 @@
+.payementInfo{
+    margin-bottom: 150px;
+}
+.shopping-cart{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+.productElement-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 0px 15px;
+}
+.productElement-flex{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+}
+.product,.price,.quantity,.subtotal{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 600;
+}
+.product{
+    flex: 8;
+}
+.price,.quantity,.subtotal{
+    flex: 1;
+}
+.ProductElement-flex-js{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+.product-js{
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+.product-js button img{
+    width: 20px;
+}
+.product-js button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.product-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.product-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.price-js,.quantity-js,.subtotal-js{
+    flex: 1;
+}
+.quantity-js{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+.quantity-js img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.quantity-js p{
+    font-size: large;
+    font-weight: 600;
+}
+.subtotal,.subtotal-js{
+    text-align: right;
+}

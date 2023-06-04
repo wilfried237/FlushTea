@@ -1,0 +1,39 @@
+body {
+    /* Setting the font family of the body to Poppins. */
+    font-family: Poppins;
+    /* Setting padding at the bottom of the body to 100 pixels. */
+    padding-bottom: 100px;
+    /* Removing margin of the body. */
+    margin: 0;
+}
+
+.upper-section {
+    /* Setting background color of the upper section to a light brown. */
+    background-color: #F6EBDA;
+    /* Setting height of the upper section to 900 pixels. */
+    height: 900px;
+    /* Setting position of the upper section to relative. */
+    position: relative;
+    /* Adding a background image to the upper section. */
+    background-image: url('image/back-coffee1.png');
+    /* Preventing the background image from repeating. */
+    background-repeat: no-repeat;
+    /* Positioning the background image a certain distance from the right edge and 15 pixels from the top. */
+    background-position: calc(100% + 213px) 15px;
+
+    /* An alternative background image that was not used, but was commented out. */
+    /* background-image: url(image/back-coffee2.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% +200px) bottom left; */
+}
+
+/* An alternative background image element that was not used, but was commented out. */
+/* .cofee-backgroung-img{
+    background: url(image/back-coffee1.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left: 50%;
+} */ 

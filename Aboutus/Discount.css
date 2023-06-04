@@ -1,0 +1,33 @@
+.Discount{
+    background-color: #FF902A;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.text-part1 p{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+.inputButtonPart input{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.inputButtonPart button{
+    border: none;
+    padding: 11px 15px;
+    color: #FF902A;
+    border-radius: 4px;
+    background-color: #F6EBDA;
+}
+.inputButtonPart input:focus{
+    outline: none;
+}

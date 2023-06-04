@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    /* background: #343d4b; */
+    /* background-image: url(../image/pexels-julie-aagaard-2351275.jpg); */
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-size: 400% 400%;
+    animation: GradientBG 15s ease infinite;
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+}
+.signup,.login{
+    color: bisque;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.signup{
+    text-decoration: none;
+}
+.login{
+    text-decoration-line: underline;
+    text-underline-offset:8px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: red;
+}
+.sign-log{
+    z-index: 9999;
+}
+.block-element{
+    background-color: transparent;
+    width: 22%;
+    height: 60vh;
+    display: grid;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-template-rows: 20px 1fr 50px ;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Adds a semi-transparent white background */
+    border-radius: 10px; /* Gives the element rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3); box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+    z-index: 9999;
+}
+.input-elements{
+    display: grid;
+    margin: auto;
+    grid-template-rows: 1fr 1fr ;
+    row-gap: 25px;
+    width: 100%;
+    z-index: 9999;
+}
+.input input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-color: white ;
+    border-style: solid;
+    background-color: transparent;
+    width: 100%;
+    padding: 10;
+    margin-top: 10px;
+    flex: 1fr;
+    padding-bottom: 10px;
+    transition: border-color 0.5s;
+}
+.input input::placeholder{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: poppins;
+}
+.input input:focus{
+    border-color: green;
+    border-style: solid;
+}
+.input input:focus{
+    outline: none;
+}
+.agree input{
+    margin:0;
+}
+.agree-button{
+    display: grid;
+    margin: auto;
+    margin-top: -30px;
+    z-index: 9999;
+}
+.button-part{
+    display: grid;
+    margin: auto;
+    z-index: 9999;
+}
+.btn-reg{
+    background-color: green;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    transition: padding 0.4s;
+}
+.btn-reg a{
+    text-decoration: none;
+    color: white;
+}
+.btn-reg:hover{
+    padding: 15px 35px;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .square {
+    z-index: 1;
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #5a6473;
+    animation: square 10s infinite linear alternate;
+    transform-origin: bottom;
+  }
+
+  .square:nth-child(1) {
+    left: 20%;
+  }
+
+  .square:nth-child(2) {
+    left: 40%;
+    height: 75px;
+    width: 75px;
+    animation-duration: 8s;
+  }
+
+  .square:nth-child(3) {
+    left: 60%;
+    height: 30px;
+    width: 30px;
+    animation-delay: 2s;
+    animation-direction: reverse;
+  }
+
+  .square:nth-child(4) {
+    left: 80%;
+    height: 60px;
+    width: 60px;
+    animation-duration: 6s;
+  }
+
+  @keyframes square {
+    from {
+      transform: translateY(0) rotate(0);
+    }
+    to {
+      transform: translateY(-2000px) rotate(720deg);
+    }
+  }
+  @keyframes GradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

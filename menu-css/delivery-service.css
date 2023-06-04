@@ -1,0 +1,63 @@
+/* Adds a margin of 290px to the top of all elements with class delivery-service. */
+.delivery-service {
+    margin-top: 290px;
+}
+
+/* A container for the section with a grid layout that has three equal columns. Sets width, height, and margins, and aligns content to center. */
+.delivery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    height: 270px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+/* Styles each element within the delivery-grid container as a grid layout with two rows. Aligns content to center. */
+.delivery-grid-element {
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* Styles the image part of the delivery items by centering it and setting its size and margin. */
+.delivery-image-part img {
+    width: 130px;
+    margin-top: 35px;
+}
+.delivery-image-part {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles the text part of the delivery items by centering it with a grid layout and sets font size, alignment, and color. */
+.delivery-text-part {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.delivery-text-part1 p {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: #2F2105;
+   margin: 0;
+}
+/* Second paragraph of delivery item text with an emphasis on smaller font size and top margin */
+.delivery-text-part2 p {
+   text-align: center;
+   font-size: medium;
+   margin-top: 5px;
+}
+
+/* Styles the main header text for delivery items, including font size and alignment as well as margins*/
+.delivery-how-text p {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 200px;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
+}

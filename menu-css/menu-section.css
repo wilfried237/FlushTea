@@ -1,0 +1,167 @@
+/* Styles the menu section of a webpage with margin, width, and grid layout. */
+.menu-section {
+    margin-top: 100px;
+    width: 65%;
+    display: grid;
+    /* Centers the menu-section element both horizontally and vertically on the webpage. */
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* Styles special text within the menu section with font size and weight. */
+.special-menu-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Styles elements with an underline for each word offset by 8px. */
+.service-un {
+    text-underline-offset: 8px;
+}
+
+/* Styles the grid layout of the menu section with column and row spacing. */
+.menu-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 45px;
+    column-gap: 30px;
+}
+
+/* Styles each element in the menu section with width, grid layout, box shadow, padding, and border radius. */
+.menu-section-element {
+    width: 265px;
+    display: grid;
+    grid-template-rows: 1fr 50px 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+    padding: 12px;
+    border-radius: 10px;
+    /* Adds transition effect for hover events. */
+    transition: padding 0.4s;
+}
+.menu-section-element:hover {
+    /* Increases padding on hover event. */
+    padding: 20px;
+}
+
+/* Styles the image part of each element in the menu section with height, width, object fit and position, and border radius. */
+.menu-section-img-part img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10px;
+}
+
+/* Positions the image part relative to its container. */
+.menu-section-img-part {
+    position: relative;
+}
+
+/* Styles the rating of each element in the menu section with grid layout, position, background color, padding, and border radius. */
+.menu-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 8px;
+    left:15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.5px 10px 0.5px 15px;
+    border-radius: 50px;
+}
+
+/* Styles the rating text within each element with font size, weight, and margin. */
+.menu-rating p {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Styles for image ratings in a menu */
+.menu-rating img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    margin-left: 3px;
+    margin-top: 2.5px;
+}
+
+/* Styles for image parts in a menu section */
+.menu-section-img-part{
+    height: 200px;
+    width: 265px;
+}
+
+/* Styles for name and description elements in a menu section */
+.menu-section-name,.menu-section-description{
+    display: inline-block;
+}
+
+/* Styles for name element (a <p> tag inside a menu section) */
+.menu-section-name p{
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Styles for name and view elements in a menu section */
+.menu-section-nameView{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+.menu-section-view p{
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.menu-section-view{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+/* Styles for description element (a <p> tag inside a menu section) */
+.menu-section-description p{
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    color: #7E7D7A;
+    font-weight: 600;
+}
+
+/* Styles for an image in a menu section */
+.menu-section-img{
+    width:15px;
+}
+
+/* Styles for a button element in a menu section */
+.menu-section-button{
+    background-color: #FF902A;
+    border: none;
+    border-radius: 80px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: width 0.4s , height 0.4s;
+}
+.menu-section-button:hover{
+    width: 45px;
+    height: 45px;
+}
+
+/* Styles for a container that holds both a description and a button */
+.menu-section-description-button{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Styles for an image in the button container */
+.menu-section-button-img{
+    display: grid;
+    justify-content: end;
+}

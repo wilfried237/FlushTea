@@ -1,0 +1,198 @@
+/* Styles for a container with a thumbnail profile and description */
+.Thumbnail-Profile-Description{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Styles for the thumbnail profile part of the container */
+.Thumbnail-profile-part{
+    display: grid;
+    justify-content: center;
+}
+
+/* Styles for the description part of the container */
+.Thumbnail-Description-part{
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+/* Styles for the image element representing the profile picture in the thumbnail*/
+.thumbnail-img-profile{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 250px;
+    margin-top: 25%;
+}
+
+/* Styles for the thumbnail profile container */
+.thumbnail-profile{
+    position: relative;
+}
+
+/* Styles for the name section in the thumbnail profile */
+.Thumbnail-name{
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    background-color: white;
+    padding: 5px 50px;
+    color: rgb(143, 93, 28);
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Styles for giving a glass effect to the thumbnail */
+.glass-effect{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Styles for the view section in the thumbnail profile */
+.Thumbnail-view{
+    position: absolute;
+    padding: 2px 40px;
+    background-color: white;
+    color: rgb(143, 93, 28);
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    top: 350px;
+    left: -9px;
+    margin: 0;
+}
+
+/* Styles for the star ratings section in the thumbnail profile */
+.Thumbnail-Stars-Rating{
+    position: absolute;
+    right: -30px;
+    top: 160px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1px 20px;
+}
+
+/* Styles for the star rating text in the thumbnail profile */
+.Thumbnail-Stars-Rating p{
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styles for the gold star icon in the thumbnail profile */
+.Thumbnail-gold-star{
+    width: 20px;
+}
+
+/* Styles for the first paragraph element in the description part of the container*/
+.Thumbnail-description-first-part p{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* The following code is used to style a thumbnail description */
+/* This sets the color of a span element within a p element in the first part of the thumbnail description to #FF902A */
+.Thumbnail-description-first-part p span{
+    color: #FF902A;
+}
+
+/* This sets the color and font size of a p element in the second part of the thumbnail description */
+.Thumbnail-description-second-part p{
+    color: #7E7D7A;
+    font-size: 18px;
+}
+
+/* This sets the display of div and p elements within a container with class Thumbnail-description-part-button to inline-block */
+.Thumbnail-description-part-button div , .Thumbnail-description-part-button p{
+    display: inline-block;
+}
+
+/* This sets the width of an image inside a container with class Thumbnail-order-button to 10px */
+.Thumbnail-order-button img{
+    width: 10px;
+}
+
+/* This is a commented out code block */
+
+/*
+.Thumbnail-order-button div{
+    background-color: #FF902A;
+    padding: 5px;
+    border-radius: 50px;
+}
+*/
+
+/* This sets the display of an element with class order-button to grid, with one column using 1fr, another column having a fixed width of 25px, and centers it both horizontally and vertically. */
+.order-button{
+    display: grid;
+    grid-template-columns: 1fr 25px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* This sets the styling of a div element within an element with class order-button */
+.order-button div{
+    background-color: #FF902A;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/* This sets the color, font size and margin of a p element within an element with class order-button */
+.order-button p{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* This sets the background color, padding, border radius, and margin of an element with class order-button, as well as adds a transition effect, mouse cursor and removes the border */
+.order-button{
+    background-color: #2F2105;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 50px;
+    transition: padding 0.4s;
+    cursor: pointer;
+}
+
+/* This adds a hover effect to an element with class order-button */
+.order-button:hover{
+    padding: 15px 35px;
+}
+
+/* This sets the color, font size and weight, and cursor properties of an element with class Moremenu, and adds a transition effect for attributes changing upon hover */
+.Moremenu{
+    color: #FF902A;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.4s,padding 0.4s, border-radius 0.4s;
+}
+
+/* This adds a hover effect to an element with class Moremenu */
+.Moremenu:hover{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* This sets the margin and font size and weight of a p element within an element with class popular-text */
+.popular-text{
+    margin-left: 125px;
+    margin-top: -200px;
+}
+
+.popular-text p{
+    font-size: 30px;
+    font-weight: 600;
+}

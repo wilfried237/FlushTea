@@ -1,0 +1,43 @@
+.body-element{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    row-gap: 70px;
+    margin-bottom: 50px;
+}
+.presentation-element{
+    text-align: center;
+}
+.Aboutus-h2{
+  margin: 0;
+  font-size: 30px;
+}
+.About-description{
+    margin: 0;
+}
+.element-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    column-gap: 20px;
+}
+.description-part{
+    width: 100%;
+    /* text-justify: newspaper; */
+}
+.description-part P{
+    font-size: 14px;
+}
+.Image-part{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.Image-part img{
+    width: 70%;
+    min-width: 50%;
+}

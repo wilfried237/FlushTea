@@ -1,0 +1,163 @@
+.catalog-element {
+    /* Setting position of the catalog element to absolute, with 50% left offset and bottom margin of -50%. */
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    /* Styling the dimensions of the catalog element, background color, border radius and display as a grid layout. */
+    height: 250px;
+    width: 1000px;
+    background-color: #F9D9AA ;
+    border-radius: 50px;
+    display: grid;
+    /* Creating three columns of equal width within the grid layout, with a 10 pixel gap between them. */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    /* Adding padding within each cell of the grid layout. */
+    padding: 8px 25px;
+    /* Repeating display property for no reason. */
+    display: grid; 
+    /* Changing margin of the catalog element to center it horizontally using negative margin-left, and adjusting it vertically by margin-bottom. */
+    margin-left: -500px;
+    margin-bottom: 250px;
+}
+
+.cat {
+    /* Styling the individual elements in the catalog, including margin, dimensions, background color, border, border radius, and display as a grid layout. */
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid;
+    border-color: rgba(0, 0, 0, 0);
+    /* Moving the catalog item up by 50% to hide its bottom half initially. */
+    margin-top: -50%;
+    /* Setting up a grid layout with three rows of varying heights within each catalog item. */
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    /* Adding a transition effect when the padding block changes on hover. */
+    transition: padding-block 0.3s;
+    /* Commenting out a box-shadow effect on the catalog items. */
+    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
+}
+
+/* The following code triggers when any catalog item is hovered over and increases the padding-block to 13px. */
+.cat:hover {
+    padding-block: 13px;
+}
+
+/* Styling for a coffee image within the catalog, including dimensions, display as grid layout, margins, and object-fit and object-position properties. */
+.coffe-image-part {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    margin-top:10px;
+}
+.coffee-cat-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    /* Adding transition effects for webkit-transform and transform properties. */
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.3s;
+}
+/* Hover effect on the coffee image that scales it up 1.8x and rotates it slightly. */
+.coffee-cat-img:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+}
+
+/* Styles the description part of the coffee item, including display as a grid layout with two columns, justification and alignment alongside margin specifications for the top of the item. */
+.coffee-description-part {
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Styles the name of the coffee, including a grid layout aligned to the left, with a margin of 20px alongside font-size and font-weight. */
+.coffee-name {
+    display: grid;
+    justify-content: start;
+    margin-left: 20px;
+}
+.coffee-name p, .coffee-view p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Styles the coffee view, including a grid layout aligned to the left with padding and margins. */
+.coffee-view {
+    display: grid;
+    justify-content: start;
+}
+
+/* Styles for Hot and Cold buttons, including padding, background color, border radius and color, alongside transition effects and cursor properties. */
+.Hot, .cold {
+    padding: 5px 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    border-color: #F9D9AA;
+    border-style: solid;
+    color:#F9D9AA;
+    transition: border-color 0.4s,color 0.4s;
+    cursor: pointer;
+}
+/* Hover effects on Hot and Cold buttons that change border-color and color. */
+.Hot:hover, .cold:hover {
+    border-color: #FF902A;
+    color: #FF902A;
+}
+
+/* Adds a margin of 20px to the right of all elements with class Hot. */
+.Hot {
+    margin-right: 20px;
+}
+
+/* Styles the image within a button and sets its width to 20px */
+.button-cat-coffee img {
+    width: 20px;
+}
+/* Styles the button itself, including background color, border, padding, border radius, vertical alignment, transition effect and cursor. */
+.button-cat-coffee {
+    background-color: #FF902A;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: padding 0.4s,background-color 0.3s;
+    cursor: pointer;
+}
+/* Hover effect on button that increases the padding size to 12.5px. */
+.button-cat-coffee:hover {
+    padding: 12.5px;
+}
+/* Changing the background color of the button when it is clicked/active. */
+.button-cat-coffee:active {
+    background-color: #F9D9AA;
+}
+
+/* Styles a container for a coffee item's buttons and aligns as a grid layout with two columns alongside margins */
+.coffee-cat-button {
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-cat div {
+    display: inline-block;
+}
+/* Styles the buttons container, adding a margin to the left. */
+.buttons-cat {
+    margin-left: 20px;
+}
+/* Styles the add coffee button section by aligning its grid layout to the left and center. */
+.add-coffee-cat-button {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}

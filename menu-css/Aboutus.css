@@ -1,0 +1,97 @@
+.About-us {
+    /* Setting the background color of About Us section to a light brown. */
+    background-color: #F6EBDA;
+    /* Setting the width of the About Us section to 100 percent. */
+    width: 100%;
+    /* Setting the height of the About Us section to 400 pixels. */
+    height: 400px;
+    /* Setting margin at the top of the About Us section to 170 pixels. */
+    margin-top: 170px;
+}
+
+.About-us-grid {
+    /* Enabling the grid display for About Us section. */
+    display: grid;
+    /* Defining two columns of equal width for the grid layout. */
+    grid-template-columns: 1fr 1fr;
+}
+
+.About-us-image {
+    /* Setting width and height of image container to 100% */
+    width: 100%;
+    height: 100%;
+    /* Enabling grid display for image container, and centering its content. */
+    display: grid;
+    justify-content: center;
+    /* Setting position of image container to relative. */
+    position: relative;
+}
+
+.About-us-image img {
+    /* Setting dimensions and object-fit and object-position properties for the image. */
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    /* Adding border radius to create rounded corners. */
+    border-radius: 10px;
+    /* Setting position of image within its container to absolute, and moving it to the right by 150 pixels and up by 65 pixels. */
+    position: absolute;
+    right: 150px;
+    top: -65px;
+}
+
+.About-us-description {
+    /* Enabling grid display for the description block. */
+    display: grid;
+    /* Setting margin at the top of the description block to 60 pixels. */
+    margin-top: 60px;
+}
+
+.About-us-description-p1 p {
+    /* Styling the first paragraph of the description block. Setting font size and weight, and resetting margins. */
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.About-us-description-p2 p {
+    /* Styling the second paragraph of the description block. Adding margin to the top, removing margin from the bottom, setting font size and weight. */
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#span-us, .service-un {
+    /* Setting a special style for span class with id 'us' and classes with name 'service-un'. Changing text color, underline thickness, color, offset. */
+    color: black;
+    text-decoration-thickness: 0.15em;
+    text-decoration-color: #F4AE26;
+    text-underline-offset: 5px;
+}
+
+.About-us-description-p3 p {
+    /* Styling the third paragraph of the description block by changing font size, line height and text color. */
+    font-size: 14px;
+    line-height: 1.4;
+    color: #7E7D7A;
+}
+
+.About-us-description-button button {
+    /* Styling the button in the About Us section by removing border, setting background color, text color, padding, font size and weight, and border-radius. */
+    border: 0;
+    background-color: #2F2105;
+    color: #F4AE26;
+    padding: 10px 15px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 22px;
+    /* Adding transition effect on hover. */
+    transition: padding 0.4s;
+}
+
+.About-us-description-button button:hover {
+    /* Increasing the padding on hover for the About Us button. */
+    padding: 14px 19px;
+}

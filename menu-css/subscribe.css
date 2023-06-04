@@ -1,0 +1,81 @@
+/* This code is for styling a subscribe section. */
+
+/* Selecting the element with class subscribe to style it. */
+.subscribe {
+    /* Setting background image of the subscriber section. */
+    background-image: url(../image/sub-img.jpg);
+    /* Ensuring the background image covers the entire container. */
+    background-size: cover;
+    /* Displaying the content within the subscriber section in a grid format. */
+    display: grid;
+    /* Centering the subscriber section horizontally within its parent container. */
+    margin: auto;
+    /* Setting the width of the subscriber section to 60% of its parent container. */
+    width: 60%;
+    /* Setting the height of the subscriber section to 300 pixels. */
+    height: 300px;
+    /* Adding top margin to the subscriber section to create space between it and its sibling elements. */
+    margin-top: 100px;
+    /* Rounding off the corners of the subscriber section. */
+    border-radius: 20px;
+}
+
+/* This code is for styling the text inside the subscribe section. */
+
+/* Selecting the paragraph element with class sub-p to style it. */
+.sub-p {
+    /* Center aligning the text within its parent container. */
+    text-align: center;
+    /* Setting the font size of the text to 22 pixels. */
+    font-size: 22px;
+    /* Making the text bold by setting the font weight to 600. */
+    font-weight: 600;
+    /* Setting the color of the text to white. */
+    color: white;
+    /* Setting the top margin of the paragraph element to 10%. */
+    margin-top: 10%;
+}
+
+/* This code is for styling a subscribe button. */
+.subscribe-btn {
+    /* Displaying the subscribe button as a flexbox container to align its children elements. */
+    display: flex;
+    /* Centering the subscribe button horizontally within its container. */
+    justify-content: center;
+    /* Setting the position of the subscribe button to relative. */
+    position: relative;
+}
+.subscribe-btn input{
+    /* Removing the border and setting the background color of the input element to white. */
+    border: none;
+    background-color: white;
+    /* Adding padding to the input element. */
+    padding: 13px 25px;
+    /* Setting the width of the input element to 300 pixels. */
+    width: 350px;
+    /* Making the edges of the input element rounded by setting the border radius. */
+    border-radius: 30px;
+}
+.subscribe-btn input:focus{
+    /* Removing the outline when the input field is in focus. */
+    outline: none;
+}
+.subscribe-btn button{
+    /* Setting the position of the button to absolute. */
+    position: absolute;
+    /* Setting the background color of the button to a dark brown color. */
+    background-color: #2F2105;
+    /* Setting the text color of the button to white. */
+    color: white;
+    /* Adding padding to the button element. */
+    padding: 10px 20px;
+    /* Removing the border from the button. */
+    border: none;
+    /* Making the edges of the button rounded by setting the border radius. */
+    border-radius: 50px;
+    /* Positioning the button element at a specified location from the top and right edge. */
+    top: 3px;
+    right: 260px;
+    /* Changing the cursor style to pointer on hover. */
+    cursor: pointer;
+}

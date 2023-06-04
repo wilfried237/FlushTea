@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PAGE</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <form id="myForm">
+        <div class="block-element">
+        
+            <div class="sign-log">
+                <a href="signup.HTML" class="signup">SIGN UP</a>
+                <a href="login.html" class="login">LOG IN</a>
+            </div>
+            <div class="input-elements">
+                <div class="input">
+                    <input id="userName" placeholder="Enter Your Username" type="text" required>
+                </div>
+                <div class="input">
+                    <input id="userEmail" placeholder="Enter Your Email" type="text" required>
+                </div>
+                <div class="input">
+                    <input id="userPsw" placeholder="Enter Your Password" type="text" required>
+                </div>
+                <div class="input">
+                    <input id="userCpsw" placeholder="Confirm Your Password" type="text" required>
+                </div>
+            </div>
+            <div class="agree-button">
+                <div class="agree">
+                    <input id="userCheck" type="checkbox" required>
+                    <label>I agree with terms & conditions</label>
+                </div>
+            </div>
+            <div class="button-part">
+                <button type="submit" id="btn-reg" class="btn-reg">Register</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+<script src="signup.js"></script>
+</html>
