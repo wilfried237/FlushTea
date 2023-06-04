@@ -10,7 +10,7 @@ loginBtn.addEventListener('click',()=>{
             const userDetail= verifyEmail(emailInput.value);
             if(userDetail[1] == passwordInput.value){
                 alert(`welcome ${userDetail[0]}`);
-                window.location.href='../Menu.html';
+                window.location.href='../index.html';
             }
             else{
                 alert('password is not correct');
