@@ -20,16 +20,23 @@ myForm.addEventListener('submit', (event) => {
 btnReg.addEventListener('click',()=>{
         if(isEmpty()){
             if(userVerification(userName.value,userEmail.value)){
-                let userDetails={
-                    userName:userName.value,
-                    userEmail:userEmail.value,
-                    userPassword:userPsw.value
-                };
-                let users = JSON.parse(localStorage.getItem('users')) || [];
-                users.push(userDetails);
-                localStorage.setItem('users',JSON.stringify(users));
-                alert('successfully been created');
-                window.location.href = "login.html";
+                if(userPsw.value == userCpsw.value){
+                    let userDetails={
+                        userName:userName.value,
+                        userEmail:userEmail.value,
+                        userPassword:userPsw.value
+                    };
+                    let users = JSON.parse(localStorage.getItem('users')) || [];
+                    users.push(userDetails);
+                    localStorage.setItem('users',JSON.stringify(users));
+                    alert('successfully been created');
+                    window.location.href = "login.html";
+                }
+                else{
+                    alert('Password does not match');
+                    userPsw.style.borderColor = "red";
+                    userCpsw.style.borderColor = "red";
+                }
             }
         }
 });
