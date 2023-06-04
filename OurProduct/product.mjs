@@ -3,7 +3,7 @@ const products = [
   {
     id: 1, // type int
     name: "Sandwich", // type char
-    img: "http://127.0.0.1:5500/image/sandwich.jpg", // type string
+    img: "../image/sandwich.jpg", // type string
     price: 9.55, //type number
     description: {
       partialDes: "bread with meat and <br> vegetables",
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2, // type int
     name: "Hot Milk", // type char
-    img: "http://127.0.0.1:5500/image/hotmilk.jpg", // type string
+    img: "../image/hotmilk.jpg", // type string
     price: 8.45, //type number
     description: {
       partialDes: "Hot Milk with less <br> sugar",
@@ -29,7 +29,7 @@ const products = [
   {
     id: 3, // type int
     name: "Coffee Ice Cream", // type char
-    img: "http://127.0.0.1:5500/image/coffee-ice-cream.jpg", // type string
+    img: "../image/coffee-ice-cream.jpg", // type string
     price: 9.28, //type number
     description: {
       partialDes: "coffee with ice cream <br> vanilla",
@@ -42,7 +42,7 @@ const products = [
   {
     id: 4, // type int
     name: "Cappucino", // type char
-    img: "http://127.0.0.1:5500/image/cappicino.jpg", // type string
+    img: "../image/cappicino.jpg", // type string
     price: 8.91, //type number
     description: {
       partialDes: "Hot Cappucino",
@@ -55,7 +55,7 @@ const products = [
   {
     id: 5, // type int
     name: "Moccacinno", // type char
-    img: "http://127.0.0.1:5500/image/mocaccino.jpg", // type string
+    img: "../image/mocaccino.jpg", // type string
     price: 8.02, //type number
     description: {
       partialDes: "Hot Moccacino",
@@ -68,7 +68,7 @@ const products = [
   {
     id: 6, // type int
     name: "Waffle Ice Cream", // type char
-    img: "http://127.0.0.1:5500/image/wafle-ice-cream.jpg", // type string
+    img: "../image/wafle-ice-cream.jpg", // type string
     price: 8.99, //type number
     description: {
       partialDes: "waffle with ice cream",
