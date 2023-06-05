@@ -10,6 +10,9 @@ body{
     background-size: 400% 400%;
     animation: GradientBG 15s ease infinite;
     background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .signup,.login{
     color: bisque;
@@ -32,13 +35,9 @@ body{
 }
 .block-element{
     background-color: transparent;
-    width: 22%;
-    height: 60vh;
-    display: grid;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    grid-template-rows: 20px 1fr 50px ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
     padding: 30px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5); /* Adds a semi-transparent white background */
@@ -180,12 +179,12 @@ body{
   }
 @media only screen and (max-width: 767px) {
     .block-element{
-        height: 50vh;
-        width: 60%;
+        width: 85%;
+        margin: auto;
     }
-    body{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }  
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .block-element{
+    width: 100%;
+  }
 }
