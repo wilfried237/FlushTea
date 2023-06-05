@@ -5,7 +5,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.right-section2{
+    display: none;
+}
 /* Styles the left section of the header with a flex layout and centers the content. */
 .left-section {
     display: flex;
@@ -132,4 +134,23 @@
     font-size: 12px;
     margin: 0;
     font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+    .header{
+        grid-template-columns: 1fr 1fr;
+    }
+    .middle-section{
+        display: none;
+    }
+    .right-section{
+        display: none;
+    }
+    .right-section2{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .burger-menu img{
+        width: 2rem;
+    }
 }

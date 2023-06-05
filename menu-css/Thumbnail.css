@@ -196,3 +196,32 @@
     font-size: 30px;
     font-weight: 600;
 }
+@media only screen and (max-width: 767px) {
+    .Thumbnail-Profile-Description{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .Thumbnail-Description-part{
+        margin-left: 0px;
+    }
+    .Thumbnail-description-first-part p{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    .Thumbnail-description-second-part p{
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0;
+    }
+    .Thumbnail-profile-part{
+        display: none;
+    }
+    .Thumbnail-description-part-button{
+        display: none;
+    }
+    .popular-text{
+        display: none;
+    }
+}
