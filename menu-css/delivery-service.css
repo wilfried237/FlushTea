@@ -71,26 +71,36 @@
     }
     .delivery-how-text p{
         margin: 0;
+        font-size: medium;
     }
     .delivery-grid{
         margin-top: 1.5rem;
         display: flex;
         justify-content: center;
-        column-gap: 1.5em;
         align-items: center;
-        width: 80%;
+        width: 100%;
+        height: auto;
     }
     .delivery-grid-element{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        row-gap: 0.5rem;
+        vertical-align: middle;
+    }
+    .delivery-image-part{
+        display: flex;
+        justify-content: center;
     }
     .delivery-image-part img{
-        width: 100%;
+        width: 60%;
     }
     .delivery-text-part1 p{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+    }
+    .delivery-text-part2 p{
+        font-size: 0.5rem;
+        font-weight: 700;
     }
 }
