@@ -138,6 +138,9 @@
 @media only screen and (max-width: 767px) {
     .header{
         grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
     }
     .middle-section{
         display: none;
@@ -147,7 +150,7 @@
     }
     .right-section2{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         
     }
     .burger-menu img{

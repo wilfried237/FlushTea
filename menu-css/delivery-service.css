@@ -61,3 +61,36 @@
     letter-spacing: 0.04em;
     margin-bottom: 0;
 }
+@media only screen and (max-width: 767px) {
+    .delivery-service{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .delivery-how-text p{
+        margin: 0;
+    }
+    .delivery-grid{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5em;
+        align-items: center;
+        width: 80%;
+    }
+    .delivery-grid-element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .delivery-image-part img{
+        width: 100%;
+    }
+    .delivery-text-part1 p{
+        font-size: 1.2rem;
+    }
+}

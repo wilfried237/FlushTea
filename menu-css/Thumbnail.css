@@ -201,6 +201,7 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        flex: 1;
     }
     .Thumbnail-Description-part{
         margin-left: 0px;
@@ -222,6 +223,16 @@
         display: none;
     }
     .popular-text{
+        display: none;
+    }
+    .upper-section{
+        /* height: 90vh; */
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .catalog-element{
         display: none;
     }
 }
