@@ -165,3 +165,13 @@
     display: grid;
     justify-content: end;
 }
+@media only screen and (max-width: 767px) {
+    .menu-section-grid{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .special-menu-text{
+        text-align: center;
+    }
+}
