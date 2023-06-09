@@ -1,83 +1,3 @@
-const product = [
-    {
-      id: 1, // type int
-      name: "Sandwich", // type char
-      img: "../image/sandwich.jpg", // type string
-      price: 9.55, //type number
-      description: {
-        partialDes: "bread with meat and <br> vegetables",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-      }, //type char
-      notes: 4.5, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-    {
-      id: 2, // type int
-      name: "Hot Milk", // type char
-      img: "../image/hotmilk.jpg", // type string
-      price: 8.45, //type number
-      description: {
-        partialDes: "Hot Milk with less <br> sugar",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-       }, //type char
-      notes: 4.8, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-    {
-      id: 3, // type int
-      name: "Coffee Ice Cream", // type char
-      img: "../image/coffee-ice-cream.jpg", // type string
-      price: 9.28, //type number
-      description: {
-        partialDes: "coffee with ice cream <br> vanilla",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-       }, //type char
-      notes: 4.8, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-    {
-      id: 4, // type int
-      name: "Cappucino", // type char
-      img: "../image/cappicino.jpg", // type string
-      price: 8.91, //type number
-      description: {
-        partialDes: "Hot Cappucino",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-       }, //type char
-      notes: 4.8, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-    {
-      id: 5, // type int
-      name: "Moccacinno", // type char
-      img: "../image/mocaccino.jpg", // type string
-      price: 8.02, //type number
-      description: {
-        partialDes: "Hot Moccacino",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-       }, //type char
-      notes: 4.8, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-    {
-      id: 6, // type int
-      name: "Waffle Ice Cream", // type char
-      img: "../image/wafle-ice-cream.jpg", // type string
-      price: 8.99, //type number
-      description: {
-        partialDes: "waffle with ice cream",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-       }, //type char
-      notes: 4.8, //type number
-      views: "12K", //type string
-      quantity:1
-    },
-  ];
 function updateBasket(){
     const productNotification = document.getElementById('basket-item-count');
     const basketDiv = document.getElementById('BasketPart');
@@ -90,23 +10,7 @@ function updateBasket2(){
     productElements = JSON.parse(localStorage.getItem('productBag'));
     productNotification.innerHTML=`${productElements.length}` || "0";
 }
-updateBasket();
-updateBasket2();
-
-let counter=0;
-const products  = JSON.parse(localStorage.getItem('Products'));
-const productDetailDiv = document.getElementById('productDetailDivs');
-const isMobile = window.matchMedia("(max-width: 767px)").matches;
-if(isMobile){
-    setInterval(function() {
-        navProduct(counter);
-        counter+=1;
-        if(counter>=products.length){
-            counter=0;
-        }
-    },6500); 
-}
-function navProduct(id){
+function navProduct(id=0){
 productDetailDiv.innerHTML=`
     <div class="product-detail-usct">
         <div  class="product-detail-img">
@@ -138,7 +42,7 @@ productDetailDiv.innerHTML=`
                 </p> 
             </div>
             <div class="product-detail-basketImg">
-                <button> <img src="image/shopping-cart2.png" alt="" class="basketImg"> </button>
+                <button onClick="addToCart(${id})"> <img src="image/shopping-cart2.png" alt="" class="basketImg"> </button>
             </div>
         </div>
         <div class="product-detail-viewbtn">
@@ -158,3 +62,120 @@ function viewProducts(ProductId){
         alert('Product not found');
     }
 };
+function addToCart(productId){
+    let getproductBag = JSON.parse(localStorage.getItem('productBag')) || [];
+    if (!getproductBag.includes(productId)) {
+        getproductBag.push(productId);
+        localStorage.setItem('productBag', JSON.stringify(getproductBag));
+        updateBasket();
+        updateBasket2();
+    }
+    else{
+        alert(`Product already in cart`);
+    }
+    cartElement();
+  };
+
+
+//------------------------------------------------------------------------
+
+const product = [
+    {
+      id: 0, // type int
+      name: "Sandwich", // type char
+      img: "../image/sandwich.jpg", // type string
+      price: 9.55, //type number
+      description: {
+        partialDes: "bread with meat and <br> vegetables",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+      }, //type char
+      notes: 4.5, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+    {
+      id: 1, // type int
+      name: "Hot Milk", // type char
+      img: "../image/hotmilk.jpg", // type string
+      price: 8.45, //type number
+      description: {
+        partialDes: "Hot Milk with less <br> sugar",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+       }, //type char
+      notes: 4.8, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+    {
+      id: 2, // type int
+      name: "Coffee Ice Cream", // type char
+      img: "../image/coffee-ice-cream.jpg", // type string
+      price: 9.28, //type number
+      description: {
+        partialDes: "coffee with ice cream <br> vanilla",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+       }, //type char
+      notes: 4.8, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+    {
+      id: 3, // type int
+      name: "Cappucino", // type char
+      img: "../image/cappicino.jpg", // type string
+      price: 8.91, //type number
+      description: {
+        partialDes: "Hot Cappucino",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+       }, //type char
+      notes: 4.8, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+    {
+      id: 4, // type int
+      name: "Moccacinno", // type char
+      img: "../image/mocaccino.jpg", // type string
+      price: 8.02, //type number
+      description: {
+        partialDes: "Hot Moccacino",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+       }, //type char
+      notes: 4.8, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+    {
+      id: 5, // type int
+      name: "Waffle Ice Cream", // type char
+      img: "../image/wafle-ice-cream.jpg", // type string
+      price: 8.99, //type number
+      description: {
+        partialDes: "waffle with ice cream",
+        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+       }, //type char
+      notes: 4.8, //type number
+      views: "12K", //type string
+      quantity:1
+    },
+  ];
+localStorage.setItem('Products',JSON.stringify(product));
+let counter=1;
+const products  = JSON.parse(localStorage.getItem('Products'));
+const productDetailDiv = document.getElementById('productDetailDivs');
+const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+if(isMobile){
+    setInterval(function() {
+        navProduct(counter);
+        counter+=1;
+        if(counter>=products.length){
+            counter=0;
+        }
+    },7500); 
+}
+
+
+navProduct();
+updateBasket();
+updateBasket2();

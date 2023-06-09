@@ -1,3 +1,34 @@
+function viewProducts(ProductId){
+    const product = products.find(p=>p.id===ProductId);
+    if(product){
+        localStorage.setItem('selectedProduct', JSON.stringify(product));
+        window.location.href='productDetails.html';
+    }
+    else{
+        alert('Product not found');
+    }
+};
+
+function addToCart(productId){
+  let getproductBag = JSON.parse(localStorage.getItem('productBag')) || [];
+  if (!getproductBag.includes(productId)) {
+      getproductBag.push(productId);
+      localStorage.setItem('productBag', JSON.stringify(getproductBag));
+  }
+  else{
+      alert(`Product already in cart`);
+  }
+  cartElement();
+};
+function cartElement(){
+  const productNotification = document.getElementById('basket-item-count');
+const basketDiv = document.getElementById('BasketPart');
+productElements = JSON.parse(localStorage.getItem('productBag'));
+productNotification.innerHTML=`${productElements.length}`;
+}
+
+//------------------------------------------------------------------
+
 const products  = JSON.parse(localStorage.getItem('Products'));
 const menuSectionGrid = document.getElementById("menu-section-grid");
 products.forEach((product) => {
@@ -42,33 +73,4 @@ products.forEach((product) => {
   menuSectionGrid.appendChild(menuSectionElement);
 });
 
-function viewProducts(ProductId){
-    const product = products.find(p=>p.id===ProductId);
-    if(product){
-        localStorage.setItem('selectedProduct', JSON.stringify(product));
-        window.location.href='productDetails.html';
-    }
-    else{
-        alert('Product not found');
-    }
-};
-
-function addToCart(productId){
-  let getproductBag = JSON.parse(localStorage.getItem('productBag')) || [];
-  if (!getproductBag.includes(productId)) {
-      getproductBag.push(productId);
-      localStorage.setItem('productBag', JSON.stringify(getproductBag));
-  }
-  else{
-      alert(`Product already in cart`);
-  }
-  cartElement();
-};
-
-function cartElement(){
-  const productNotification = document.getElementById('basket-item-count');
-const basketDiv = document.getElementById('BasketPart');
-productElements = JSON.parse(localStorage.getItem('productBag'));
-productNotification.innerHTML=`${productElements.length}`;
-}
 cartElement();
