@@ -126,4 +126,7 @@
         font-size: 0.5rem;
         text-justify: inter-word;
     }
+    .testimonial-p2 br{
+        display: none;
+    }
 }

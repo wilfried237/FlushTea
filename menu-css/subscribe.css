@@ -18,6 +18,8 @@
     margin-top: 100px;
     /* Rounding off the corners of the subscriber section. */
     border-radius: 20px;
+
+    margin-bottom: 15rem;
 }
 
 /* This code is for styling the text inside the subscribe section. */
@@ -78,4 +80,39 @@
     right: 260px;
     /* Changing the cursor style to pointer on hover. */
     cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+    .subscribe{
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .subscribe-p-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .sub-p{
+        font-size: medium;
+        margin: 0;
+    }
+    .subscribe-p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscribe-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+    .subscribe-btn input{
+        width: auto;
+    }
+    .subscribe-btn button{
+        position: static;
+    }
 }
