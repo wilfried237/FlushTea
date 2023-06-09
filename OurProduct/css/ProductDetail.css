@@ -22,6 +22,7 @@ body{
     object-fit: cover;
     /* object-position: 0pc -270px; */
     border-radius: 10px;
+    object-position: bottom;
 }
 .information-part{
     display: flex;
@@ -71,4 +72,31 @@ body{
 }
 .btn-info:hover{
     padding: 12px 22px;
+}
+@media only screen and (max-width: 767px) {
+    .productDetail-flex{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .image-part{
+        width: 100%;
+    }
+    .image-part img{
+        width: 100%;
+        height: 50vh;
+    }
+    .information-part{
+        width: 100%;
+    }
+    .description-part{
+        text-align: justify;
+    }
+    .information-part{
+        justify-content: center;
+        align-items: center;
+    }
+    .productDetail-flex{
+        align-items: center;
+    }
 }

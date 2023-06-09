@@ -212,3 +212,17 @@ body{
 .menu-btn button:active{
     padding: 7px 12px;
 }
+
+@media only screen and (max-width: 767px) {
+    .menu-section-grid{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section{
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
