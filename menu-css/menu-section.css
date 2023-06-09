@@ -170,8 +170,15 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
+        width: auto;
     }
     .special-menu-text{
         text-align: center;
+    }
+    .menu-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
