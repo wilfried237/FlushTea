@@ -18,9 +18,9 @@ productDetailDiv.innerHTML=`
                     <img src="${products[id].img}" alt="">
                 </div>
                 <div class="product-detail-pricing">
-                    <p >&#163;${products[id].price}</p>
+                    <p class="glass-effect" >&#163;${products[id].price}</p>
                 </div> 
-                <div class="product-detail-stars">
+                <div class="product-detail-stars glass-effect">
                     <p>
                         ${products[id].notes}
                     </p>

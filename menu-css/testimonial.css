@@ -87,3 +87,43 @@
     font-size: 11px;
     color: #7E7D7A;
 }
+
+@media only screen and (max-width: 767px) {
+    .testimonisl-2,.testimonisl-3{
+        display: none;
+    }
+    .testimonial{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        padding: 10px;
+    }
+    .testimonial-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        column-gap: 2px;
+    }
+    .testimonial-description-part{
+        position: static;
+        width: 100%;
+        flex: 2;
+    }
+    .testimonial-photoCard-part{
+        grid-template-columns: 1fr;
+        flex: 1;
+    }
+    .testimonial-card-comments{
+        width: fit-content;
+        height: fit-content;
+        bottom: -37px;
+        left: 20px;
+        padding: 0;
+    }
+    .comment-containt{
+        font-size: 0.5rem;
+        text-justify: inter-word;
+    }
+}

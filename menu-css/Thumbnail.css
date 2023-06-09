@@ -269,13 +269,13 @@
     .product-detail-pricing p{
         margin: 0;
         background-color: white;
-        padding: 3px 7px;
+        padding: 1px 10px;
         position: absolute;
-        top: 7px;
+        top: 10px;
         left: 10px;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 1.3em;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 1em;
         align-items: center;
     }
     .product-detail-stars{
@@ -285,19 +285,18 @@
         column-gap:4px;
         background-color: white;
         position: absolute;
-        top: 7px;
+        top: 10px;
         right: 10px;
-        padding: 3px 8px;
-        border-radius: 10px;
+        padding: 1px 10px;
+        border-radius: 20px;
     }
     .product-detail-stars p{
+        font-size: 15px;
+        font-weight: 700;
         margin: 0;
-        font-family: poppins;
-        font-weight: 600;
-        font-size: 1.3em;
     }
     .product-detail-stars img{
-        width: 18px;
+        width: 15px;
     }
     .product-detail-title-views{
         display: flex;
