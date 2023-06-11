@@ -8,6 +8,9 @@
 .random-numbers{
     display: none;
 }
+.product-detail-usct{
+    opacity: 0;
+}
 /* Styles for the thumbnail profile part of the container */
 .Thumbnail-profile-part{
     display: grid;
@@ -199,6 +202,23 @@
     font-weight: 600;
 }
 @media only screen and (max-width: 767px) {
+    .product-detail-usct{
+        animation: fadeInOut 10s infinite;
+    }
+    @keyframes fadeInOut {
+        0% {
+          display: none;
+          opacity: 0;
+        }
+        50% {
+          display: block;
+          opacity: 1;
+        }
+        100% {
+          display: none;
+          opacity: 0;
+        }
+      }
     .Thumbnail-Profile-Description{
         display: flex;
         justify-content: center;

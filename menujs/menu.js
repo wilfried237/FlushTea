@@ -76,6 +76,23 @@ function addToCart(productId){
     cartElement();
   };
 
+function changeIcon(){
+    const burgerImgSource = document.getElementById('burger-img-source');
+    const navigationSectionHeader = document.getElementById('header-navigation-section');
+    const url1 = 'image/burgerMenu.png';
+    const url2 = 'image/icons8-cross-50.png';
+    
+    if(flag==0){
+        burgerImgSource.src = url2;
+        navigationSectionHeader.style.display= 'flex';
+        return flag=1;
+    }
+    else{
+        burgerImgSource.src = url1;
+        navigationSectionHeader.style.display= 'none';
+        return flag=0;
+    }
+}
 
 //------------------------------------------------------------------------
 
@@ -160,6 +177,7 @@ const product = [
     },
   ];
 localStorage.setItem('Products',JSON.stringify(product));
+let flag =0;
 let counter=1;
 const products  = JSON.parse(localStorage.getItem('Products'));
 const productDetailDiv = document.getElementById('productDetailDivs');
@@ -172,7 +190,7 @@ if(isMobile){
         if(counter>=products.length){
             counter=0;
         }
-    },7500); 
+    },10000); 
 }
 
 
