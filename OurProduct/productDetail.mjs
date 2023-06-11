@@ -21,6 +21,7 @@ function addToCart(productId){
         getproductBag.push(productId);
         localStorage.setItem('productBag', JSON.stringify(getproductBag));
         cartElement();
+        updateBasket2();
     }
     else{
         alert(`Product already in cart`);

@@ -14,6 +14,8 @@ function addToCart(productId){
   if (!getproductBag.includes(productId)) {
       getproductBag.push(productId);
       localStorage.setItem('productBag', JSON.stringify(getproductBag));
+      updateBasket();
+      updateBasket2();
   }
   else{
       alert(`Product already in cart`);
