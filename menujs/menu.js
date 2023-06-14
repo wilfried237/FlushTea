@@ -104,7 +104,7 @@ const product = [
       price: 9.55, //type number
       description: {
         partialDes: "bread with meat and <br> vegetables",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "At our coffee shop, we offer a delicious sandwich that is perfect for a quick and satisfying meal. Our sandwich is made with freshly baked bread and filled with a variety of high-quality ingredients. You can choose from options like roasted turkey, ham, or grilled chicken, paired with fresh lettuce, ripe tomatoes, and creamy avocado. For an extra kick, we also offer a spicy mayo or tangy mustard to add some flavor to your sandwich. Whether you're looking for a light lunch or a hearty snack, our sandwich is the perfect choice to satisfy your hunger. Come in and try one today!",
       }, //type char
       notes: 4.5, //type number
       views: "12K", //type string
@@ -117,7 +117,7 @@ const product = [
       price: 8.45, //type number
       description: {
         partialDes: "Hot Milk with less <br> sugar",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "I'm excited to tell you about our Hot Milk at our coffee shop! We take great pride in the quality of our milk and it really shines in our Hot Milk. It's the perfect drink for those who want something warm and comforting without the intensity of coffee. Our Hot Milk is made with steamed whole milk, giving it a creamy and velvety texture that will make you want to curl up with a good book.",
        }, //type char
       notes: 4.8, //type number
       views: "12K", //type string
@@ -130,7 +130,7 @@ const product = [
       price: 9.28, //type number
       description: {
         partialDes: "coffee with ice cream <br> vanilla",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "As the owner of this coffee shop, I am proud to present our signature Coffee Ice Cream. Made with freshly brewed coffee and the finest ingredients, this creamy dessert is the perfect way to cool down on a hot day or satisfy your sweet tooth after a meal. Our Coffee Ice Cream has a rich, bold flavor that will delight coffee lovers and dessert enthusiasts alike. Whether you enjoy it on its own or paired with a warm slice of pie, this ice cream is sure to leave you wanting more. Come try it for yourself and taste the difference that quality ingredients and expert craftsmanship can make.",
        }, //type char
       notes: 4.8, //type number
       views: "12K", //type string
@@ -143,7 +143,7 @@ const product = [
       price: 8.91, //type number
       description: {
         partialDes: "Hot Cappucino",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "As a coffee shop owner, I am proud to offer our signature Cappuccino. Our expert baristas use freshly ground espresso beans and perfectly frothed milk to create a smooth and creamy texture that is sure to delight your taste buds. Whether you're looking for a morning pick-me-up or a mid-day treat, our Cappuccino is the perfect choice. With its rich, bold flavor and velvety foam, it's no wonder why this classic drink has remained a favorite for generations. So come on in and experience the perfect balance of espresso and milk in every sip of our delicious Cappuccino.",
        }, //type char
       notes: 4.8, //type number
       views: "12K", //type string
@@ -156,7 +156,7 @@ const product = [
       price: 8.02, //type number
       description: {
         partialDes: "Hot Moccacino",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "Hey there! If you're looking for a delicious and unique coffee drink, then you have to try our Moccacinno! It's a perfect blend of espresso, chocolate, and milk, topped with a frothy layer of foam. Our baristas take pride in crafting each drink with care and precision, ensuring that every sip is rich and flavorful. The Moccacinno is perfect for those who want a little bit of sweetness in their coffee without it being too overpowering. Come on in and give it a try, I promise you won't be disappointed!",
        }, //type char
       notes: 4.8, //type number
       views: "12K", //type string
@@ -169,7 +169,7 @@ const product = [
       price: 8.99, //type number
       description: {
         partialDes: "waffle with ice cream",
-        fullDes: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        fullDes: "As a coffee shop owner, I am excited to introduce our latest addition to the menu - the Waffle Ice Cream! Our version of this classic dessert is made with freshly baked waffles, topped with a generous scoop of creamy ice cream, and drizzled with your choice of syrup. The combination of warm, crispy waffles and cold, smooth ice cream is simply irresistible. We offer a variety of ice cream flavors to choose from, including classic vanilla, rich chocolate, and refreshing mint. Whether you're in the mood for something sweet after your morning coffee or a late-night treat, our Waffle Ice Cream is the perfect indulgence. Come try it out today and treat your taste buds to a delicious experience!",
        }, //type char
       notes: 4.8, //type number
       views: "12K", //type string
